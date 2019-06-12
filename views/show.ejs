@@ -13,16 +13,16 @@
           <th>Name</th>
           <th>email</th>
           <th>Action</th>
-          <th><a  href="http://127.0.0.1:3031">Add New</a></th>
-          <th><a  href="http://127.0.0.1:3031/login/session_login">Login</a></th>
+          <th><a  href="/">Add New</a></th>
+          <th><a  href="/login/session_login">Login</a></th>
         </tr>
       </thead>
       <tbody>
         <tr ng-repeat="user in users">
           <td>{{user.name}}</td>
           <td>{{user.email}}</td>
-          <td><a  href="http://127.0.0.1:3031/insert/update/{{user.id}}">Update</a></td>
-          <td><a  href="http://127.0.0.1:3031/insert/delete/{{user.id}}">Delete</a></td>          
+          <td><a  href="/insert/update/{{user.id}}">Update</a></td>
+          <td><a  href="/insert/delete/{{user.id}}">Delete</a></td>          
         </tr>
       </tbody>
     </table>
