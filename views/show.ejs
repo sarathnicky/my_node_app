@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My AngularJS App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="MyCtrl">
+  <div>
+      
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>email</th>
+          <th>Action</th>
+          <th><a  href="http://127.0.0.1:3031">Add New</a></th>
+          <th><a  href="http://127.0.0.1:3031/login/session_login">Login</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="user in users">
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <td><a  href="http://127.0.0.1:3031/insert/update/{{user.id}}">Update</a></td>
+          <td><a  href="http://127.0.0.1:3031/insert/delete/{{user.id}}">Delete</a></td>          
+        </tr>
+      </tbody>
+    </table>
+   </div>    
+     
+  </body>
+  <script>
+var app = angular.module('myApp', []);
+
+app.controller('MyCtrl', function ($scope, $http) {
+    $http.get("/insert/show_data").then(function (response) {
+        $scope.users = response.data;
+    });
+  });
+</script>
+ </html>
