@@ -9,7 +9,7 @@ var mysql = require('mysql')
 var connection = mysql.createConnection({
 	 host: 'remotemysql.com',
     user: 'GXaBItTjvJ',
-    password: 'GXaBItTjvJ',
+    password: 'UC8OHkgy5g',
     database: 'GXaBItTjvJ'
 });
 
