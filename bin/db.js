@@ -1,9 +1,16 @@
 var mysql = require('mysql')
+// var connection = mysql.createConnection({
+	 // host: 'sql12.freemysqlhosting.net',
+    // user: 'sql12295270',
+    // password: 'zNVSSl3trZ',
+    // database: 'sql12295270'
+// });
+
 var connection = mysql.createConnection({
-	 host: 'sql12.freemysqlhosting.net',
-    user: 'sql12295270',
-    password: 'zNVSSl3trZ',
-    database: 'sql12295270'
+	 host: 'remotemysql.com',
+    user: 'GXaBItTjvJ',
+    password: 'GXaBItTjvJ',
+    database: 'GXaBItTjvJ'
 });
 
 /*var connection = mysql.createConnection({
