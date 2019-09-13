@@ -13,6 +13,8 @@ var connection = mysql.createConnection({
     database: 'GXaBItTjvJ'
 });
 
+
+
 /*var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
