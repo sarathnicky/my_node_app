@@ -4,7 +4,7 @@ var router = express.Router();
 console.log("working!");
 var mysql = require('mysql')
 
-/*var connection = mysql.createConnection({
+var connection = mysql.createConnection({
         host: 'zintzotek.com',
         user: 'zintzotek1',
         password: 'realtek@2019',
@@ -12,7 +12,7 @@ var mysql = require('mysql')
     });
 	
 	
-	connection.connect(function(err) {
+	/*connection.connect(function(err) {
     if (err) throw err;
     //console.log("Connected!");
 });
