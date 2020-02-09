@@ -12,11 +12,10 @@ var connection = mysql.createConnection({
     });
 	
 	
-	/*connection.connect(function(err) {
+	connection.connect(function(err) {
     if (err) throw err;
-    //console.log("Connected!");
+    console.log("Connected!");
 });
-*/
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
