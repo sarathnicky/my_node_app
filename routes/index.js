@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-console.log("working!");
+/*console.log("working!");
 var mysql = require('mysql')
 
 var connection = mysql.createConnection({
@@ -15,7 +15,7 @@ var connection = mysql.createConnection({
 	connection.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
-});
+});*/
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
