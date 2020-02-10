@@ -45,7 +45,7 @@ router.post('/game_type', function(req, res, next) {
   game_type = req.body.game_type;
   if(game_type == 1)
   {
-    var sql = "select 100000 + id as table_id, activate_player, table_status, 1 as game_type from andar_bahar_game where table_status = 'open'";
+    var sql = "select 100000 + id as table_id, activate_player, table_status, 1 as game_type from andar_bahar_game where table_status IN ('open', 'registering')";
 
       db_con.connect(function(err) {
         
